@@ -44,7 +44,7 @@ default[:bamboo][:database][:external]            = false
 default[:bamboo][:database][:type]                = 'mysql'
 case node[:bamboo][:database][:type]
 when 'mysql'
-  default[:bamboo][:database][:version]           = '6.0'
+  default[:bamboo][:database][:version]           = '5.6'
   default[:bamboo][:database][:host]              = '127.0.0.1'
   default[:bamboo][:database][:port]              = 3306
 when 'postgresql'
